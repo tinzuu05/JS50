@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+:root {
+    --border-color: #4975cf;
+    --fill-color: #6ab3f8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 40px;
+    background-color: rgb(136, 185, 231);
+    font-family: 'Arvo', serif;
+    color: #fff
+}
+
+h1 {
+    margin: 10px 0 0;
+}
+
+h3 {
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.cup {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 30px 0;
+    width: 150px;
+    height: 330px;
+    border: 4px solid var(--border-color);
+    background-color: #fff;
+    color: var(--border-color);
+    border-radius: 0 0 40px 40px;
+}
+
+.cup.cup-small {
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: 50px;
+    height: 95px;
+    border-radius: 0 0  15px 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 12px;
+    text-align: center;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.cup.cup-small.full {
+    background-color: var(--fill-color);
+    color: #fff;
+}
+
+.cups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 280px;
+}
+
+.remained {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    transition: .3s ease;
+}
+
+.remained span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.remained small {
+    font-size: 12px;
+}
+
+.percentage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    background-color: var(--fill-color);
+    font-weight: bold;
+    font-size: 30px;
+    transition: .3s ease;
+}
+
+.text {
+    margin: 0 0 5px;
+    text-align: center;
+}
